@@ -1,7 +1,7 @@
 package windroid.files;
 
 import java.io.*;
-
+//This is a static class (methodically)
 public class FileSystem
 {
 	public static File rootDir = new File("/storage/sdcard0/os/WinDroid");

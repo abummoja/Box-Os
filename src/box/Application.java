@@ -2,7 +2,7 @@ package box;
 import java.lang.reflect.*;
 import java.util.function.*;
 
-abstract class Application
+public abstract class Application
 {
 	public static boolean isRunning;
 	public static String name;
@@ -17,11 +17,16 @@ abstract class Application
 	}
 	public void startApp(){
 		//when app started
+		System.out.println(name);
+		if(isRunning) {
+			//check state [App reported]
+			//log
+		}
 	}
 	public void stopApp(){
 		// when stopped
 	}
-	public static void getName(){
-		
+	public String getName(){
+		return name;
 	}
 }

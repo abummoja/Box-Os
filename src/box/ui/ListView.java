@@ -1,6 +1,6 @@
 package box.ui;
 
-public class ListView
+public class ListView implements Print
 {
 	public static int i;
 	public static String[] str;
@@ -14,7 +14,8 @@ public class ListView
 	}
 	public static void showWithDividers(){
 		for(String str : str){
-			System.out.println(str);
+			//System.out.println(str);
+			Print.staticOut(str);
 			System.out.println("_____________");
 		}
 	}
