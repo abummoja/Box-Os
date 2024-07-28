@@ -11,6 +11,7 @@ public class Main implements Print
 	{
 		//check if system files& dirs exist, if not create them.
 		FileSystem.startFs();
+		//start necessary services & apps (startup apps)
 		//load login page if needed else load home page (list apps)
 		String passPath = FileSystem.winRoot.getPath()+"/pass.key";
 		File pf = new File(passPath);
@@ -20,6 +21,8 @@ public class Main implements Print
 		}else {
 			//Print.staticOut("Press Enter To Continue...");
 			//show desktop
+			Home mHome = new Home();
+			mHome.run();
 		}
 	}
 }
