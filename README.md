@@ -1,2 +1,3 @@
 # Box-Os
-A CLI operating system (kind of) written entirely in Java. 
+Box Os is a minimal operating system. It uses a microkernel written in go and some parts asm.
+The shell (this repo) is written entirely in java. Essentially it's like android or j2me somehow. The kernel does most of the work and like a jvm implementation runs the java shell. It is still in development as a side project and once I'm done with it I'll release the complete shell. It runs on a customized jvm jre . The goal of this Os is for me to learn how OSes work under the hood , running a machine from bare metal and also to provide a secure system (I will avoid as much as possible using existing implementations of low level elements such as network code that is open source). I'd like to make it as safe as possible hence the kernel may not be open sourced unless otherwise. 
